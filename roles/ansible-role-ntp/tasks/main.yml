@@ -1,0 +1,15 @@
+---
+- name: set timezone
+  timezone:
+    name: "{{ timezone }}"
+
+- name: add ntp synch package
+  package:
+    name: ntp
+    state: latest
+
+- name: start and enable ntp service
+  service:
+    name: "{{ ntp_service }}"
+    state: started
+    enabled: yes
