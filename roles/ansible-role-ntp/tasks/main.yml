@@ -1,8 +1,4 @@
 ---
-- name: set timezone
-  timezone:
-    name: "{{ timezone }}"
-
 - name: add ntp synch package
   package:
     name: ntp

@@ -1,3 +1,2 @@
 ---
-timezone: 'Europe/France'
 ntp_service: 'ntp'
